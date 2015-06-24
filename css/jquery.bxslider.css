@@ -1,0 +1,40 @@
+.slider-wrapper {
+  float: left;
+  width: 760px;
+}
+.pager {
+  float: left;
+  width: 220px;
+  padding-top: 70px;
+}
+.pager li {
+  list-style: none;
+  height: 45px;
+  border-top: 1px solid #bfbab2;
+  position: relative;
+  padding-top: 14px;
+  cursor: pointer;
+}
+
+.pager li:first-child {
+  border: none;
+}
+.pager .active a span{
+  color: #000;
+}
+.pager a {
+  color: #2980D6;
+  text-decoration: none;
+  color: #bfbab2;
+  font-family: "RobotoCondensedRegular";
+  padding-left: 10px;
+}
+.pager a:hover {
+  color: #D00;
+}
+.pager .active a {
+  color: #FFF;
+}
+.slide-img{
+  margin-left: 130px;
+}
