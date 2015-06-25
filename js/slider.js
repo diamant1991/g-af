@@ -25,7 +25,7 @@
 				})
 			}
 			slider.bxSlider({
-				// опции плагина
+				//опции плагина
 				//mode: 'fade',
 				controls: false,
 				pager: false,
@@ -56,10 +56,10 @@
 
 $(document).ready(function(){
    $('#carousel').bxSlider({
-    slideWidth: 10000,
-    minSlides: 4,
-    maxSlides: 4,
-    moveSlides: 1,
-    pager:false
+	   slideWidth: 10000,
+	   minSlides: 4,
+	   maxSlides: 4,
+	   moveSlides: 1,
+	   pager:false
   });
 });
