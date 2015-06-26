@@ -18,4 +18,9 @@ $(document).ready(function () {
         $blocks.height(maxH); 
     	}
    $('.text-block').equivalent();
+
+   $('.tabs-list li').click(function() {
+      $('.tabs-list li').removeClass('active');
+      $(this).addClass('active');
+    });
 });
