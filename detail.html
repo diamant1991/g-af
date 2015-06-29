@@ -189,9 +189,114 @@
 				</div>
 			</div>
 		</div>
+		<div class="other-tovar">
+			<header>
+				<img src="images/icons/red-logo.png" alt="" class="red-logo">
+				<span class="name-title">Персональное предложение</span>
+			</header>
+			<div class="carousel interior-carousel">
+				<div class="carousel-wrap">
+					<ul class="bxslider clearfix" id="carousel">
+						<li>
+							<a href="#">
+								<img src="images/slide-1.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/slide-2.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/slide-3.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/slide-4.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/slide-5.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div><!-- carousel -->
+		</div>
+		<div class="other-tovar">
+			<header>
+				<img src="images/icons/red-logo.png" alt="" class="red-logo">
+				<span class="name-title">Похожие товары</span>
+			</header>
+			<div class="carousel interior-carousel">
+				<div class="carousel-wrap">
+					<ul class="bxslider clearfix" id="carousel-2">
+						<li>
+							<a href="#">
+								<img src="images/slide-1.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/slide-2.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/slide-3.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/slide-4.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/slide-5.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div><!-- carousel -->
+		</div>
 	</section>
 </div>
 
+<footer class="footer interior-foot">
+	<div class="container clearfix">
+		<div class="left-block">
+			<p class="first-p">2015 © g-af.ru&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">карта сайта</a><br>
+			ДОСТАВКА ОСУЩЕСТВЛЯЕТСЯ ПО МЕРЕ ВОЗМОЖНОСТИ</p>
+			<p class="second-p"><span>+7 926 900-85-85</span>, <span>+7 926 659-60-60</span> (ЕЖЕДНЕВНО С 10:00 ДО 22:00)
+				<br><a href="#">SHOP@G-AF.RU</a>
+			</p>
+			
+			<ul class="social-icon clearfix">
+				<li>
+					<a href="#"><img src="images/icons/vk.png" alt=""></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/icons/youtube.png" alt=""></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/icons/instagram.png" alt=""></a>
+				</li>
+			</ul>
+		</div>
+		<div class="right-block">
+			<ul class="foot-menu">
+				<li><a href="#">Таблица размеров</a></li>
+				<li><a href="#">Бесплатная доставка</a></li>
+				<li><a href="#">Возврат</a></li>
+				<li><a href="#">Блог</a></li>
+			</ul>
+		</div>
+	</div>
+</footer><!-- container -->
 
 <script src="js/jquery.js"></script>
 <script src="js/jquery.bxslider.js"></script>
@@ -214,6 +319,17 @@
 }
 </script>
 <script src="js/slider.js"></script>
+<script>
+$(document).ready(function(){
+   $('#carousel-2').bxSlider({
+	   slideWidth: 10000,
+	   minSlides: 4,
+	   maxSlides: 4,
+	   moveSlides: 1,
+	   pager:false
+  });
+});
+</script>
 <script src="js/script.js"></script>
 </body>
 </html>

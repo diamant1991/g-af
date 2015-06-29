@@ -23,4 +23,8 @@ $(document).ready(function () {
       $('.tabs-list li').removeClass('active');
       $(this).addClass('active');
     });
+   $('.size li span').click(function() {
+      $('.size li span').removeClass('active');
+      $(this).addClass('active');
+    });
 });

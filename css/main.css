@@ -309,6 +309,32 @@ a {
 .carousel .bx-prev {
   left: 10px;
 }
+.interior-carousel {
+  min-width: inherit;
+}
+.interior-carousel .bx-next,
+.interior-carousel .bx-prev {
+  width: 50px;
+  height: 45px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin-top: -22.5px;
+}
+.other-tovar {
+  padding-left: 15px;
+}
+.other-tovar header {
+  height: 105px;
+}
+.other-tovar .red-logo {
+  position: relative;
+  top: 25px;
+}
+.other-tovar .name-title {
+  position: relative;
+  top: 10px;
+}
 .name-title {
   text-transform: uppercase;
   color: #dcdad2;
@@ -484,6 +510,7 @@ a {
   float: right;
   width: 780px;
   padding-top: 20px;
+  padding-bottom: 110px;
 }
 .main h3 {
   font-size: 24px;
@@ -868,7 +895,6 @@ a {
   color: #dcdad2;
   line-height: 1.3;
   height: 250px;
-  margin-bottom: 20px;
 }
 .properties,
 .review {
