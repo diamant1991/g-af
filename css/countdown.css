@@ -1,0 +1,33 @@
+.countdown{
+  padding-left: 25px;
+}
+ul.countdown li {
+  display: inline-block;
+  width: 65px;
+  margin-bottom: 2em;
+  text-align: center;
+}
+ul.countdown li span {
+  font-size: 42px;
+  color: #000;
+  height: 80px;
+  line-height: 80px;
+  position: relative;
+}
+/*ul.countdown li span::before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid white;
+  position: absolute;
+  top: 31px;
+}*/
+ul.countdown li p.timeRefDays,
+ul.countdown li p.timeRefHours,
+ul.countdown li p.timeRefMinutes,
+ul.countdown li p.timeRefSeconds {
+  font-size: 18px;
+  font-family: "RobotoCondensedLight";
+  color: #dcdad2;
+  text-transform: uppercase;
+}

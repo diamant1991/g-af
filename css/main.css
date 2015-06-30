@@ -305,9 +305,15 @@ a {
 }
 .carousel .bx-next {
   right: 10px;
+  background-image: url(../images/icons/arrow-right.png);
+  background-repeat: no-repeat;
+  background-position: 52%;
 }
 .carousel .bx-prev {
   left: 10px;
+  background-image: url(../images/icons/arrow.png);
+  background-repeat: no-repeat;
+  background-position: 46%;
 }
 .interior-carousel {
   min-width: inherit;
@@ -321,11 +327,9 @@ a {
   border-radius: 10px;
   margin-top: -22.5px;
 }
-.other-tovar {
-  padding-left: 15px;
-}
 .other-tovar header {
   height: 105px;
+  padding-left: 15px;
 }
 .other-tovar .red-logo {
   position: relative;
@@ -583,6 +587,11 @@ a {
   color: #dcdad2;
   position: relative;
 }
+.slct .arrow-bot {
+  position: absolute;
+  right: 8px;
+  top: 4px;
+}
 .drop {
   margin: 0;
   padding: 0;
@@ -611,6 +620,18 @@ a {
   width: 180px;
   position: relative;
   top: -18px;
+}
+.catalog .title-name {
+  height: 110px;
+  padding-left: 15px;
+}
+.catalog .title-name .red-logo {
+  position: relative;
+  top: 26px;
+}
+.catalog .title-name span {
+  position: relative;
+  top: 10px;
 }
 .cat-block {
   float: left;
@@ -899,4 +920,54 @@ a {
 .properties,
 .review {
   display: none;
+}
+.sale-list {
+  text-align: center;
+}
+.sale-list a {
+  font-size: 18px;
+}
+.big-text {
+  text-transform: uppercase;
+  text-align: center;
+  color: #660e0e;
+  font-size: 80px;
+  text-shadow: 3px 1px 5px rgba(0, 0, 0, 0.35);
+  margin-bottom: 15px;
+}
+.wrapper-sale {
+  background: transparent;
+}
+.wrapper-sale .left-menu {
+  background: #660e0e;
+  padding-bottom: 110px;
+}
+.sale-wrapper .sale-block {
+  float: left;
+  width: 33.333%;
+  background: url(../images/sale-bg.jpg);
+}
+.sale-wrapper .sale-block img {
+  width: 100%;
+  height: auto;
+}
+.sale-wrapper .sale-block .title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #dcdad2;
+  font-size: 30px;
+  line-height: 1.3;
+  padding-top: 10px;
+}
+.inter-range .irs-with-grid {
+  height: 55px;
+}
+.cat-img {
+  position: relative;
+}
+.sale-poster {
+  position: absolute;
+  right: -15px;
+  top: 30px;
+  z-index: 2;
 }

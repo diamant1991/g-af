@@ -6,7 +6,7 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-	<title>catalog</title>
+	<title>sale</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="keywords" content="" >
 	<meta name="description" content="">
@@ -14,13 +14,13 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/ion.rangeSlider.css">
 	<link rel="stylesheet" href="css/ion.rangeSlider.skinHTML5.css">
+	<link rel="stylesheet" href="css/countdown.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/main.less">
 	<script src="js/less.min.js"></script>
 	<script src="js/modernizr-2.8.3.min.js"></script>	
 </head>
 <body>
-
 <header class="header">
 	<div class="container clearfix">
 		<div class="top-panel clearfix">
@@ -57,28 +57,21 @@
 	</div>
 </header><!-- header-->
 
-<div class="container wrapper clearfix">
-	<aside class="left-menu">
-		<ul class="parent-list">
+<div class="container wrapper wrapper-sale clearfix">
+	<aside class="left-menu sale-variant">
+		<ul class="parent-list sale-list">
 			<li class="title">
-				<a href="#">женская одежда</a>
+				<a href="#">распродажа %</a>
 				<ul class="child-list">
-					<li><a href="#">jegging</a></li>
-					<li><a href="#">джинсы</a></li>
-					<li><a href="#">куртки</a></li>
-					<li><a href="#">платья</a></li>
-					<li><a href="#">рубашки</a></li>
-					<li><a href="#">свитера</a></li>
-					<li><a href="#">спортивные штаны</a></li>
-					<li><a href="#">толстовки</a></li>
-					<li><a href="#">топы</a></li>
-					<li><a href="#">футболки и поло</a></li>
-					<li><a href="#">шорты и юбки</a></li>
+					<li><a href="#">женская одежда</a></li>
 				</ul>
 			</li>
 		</ul>
 	</aside>
-	<section class="main">
+	<section class="main sale-variant">
+		<div class="big-text">
+			Распродажа %
+		</div>
 		<div class="breadcrumbs">
 			<ul class="clearfix">
 				<li>
@@ -138,15 +131,100 @@
 				</div>
 			</div>
 
-			<div class="price-range">
+			<div class="price-range inter-range">
 				<input type="text" id="price" name="price" value="" />
 			</div>
-
 		</div>
+
+		<div class="sale-wrapper clearfix">
+			<div class="sale-block">
+				<div class="sale-img">
+					<img src="images/sale.jpg" alt="">
+				</div>
+				<div class="sale-desc">
+					<div class="title">
+						распродажа <br>
+						50% <br>
+						осталось
+					</div>
+					<div class="timer-area">
+						<ul id="countdown" class="countdown">
+							<li> <span class="hours">00</span>
+							<p class="timeRefHours">час</p>
+							</li>
+							<li> <span class="minutes">00</span>
+							<p class="timeRefMinutes">мин</p>
+							</li>
+							<li> <span class="seconds">00</span>
+							<p class="timeRefSeconds">сек</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="sale-block">
+				<div class="sale-img">
+					<img src="images/sale.jpg" alt="">
+				</div>
+				<div class="sale-desc">
+					<div class="title">
+						распродажа <br>
+						50% <br>
+						осталось
+					</div>
+					<div class="timer-area">
+						<ul id="countdown-2" class="countdown">
+							<li> <span class="hours">00</span>
+							<p class="timeRefHours">час</p>
+							</li>
+							<li> <span class="minutes">00</span>
+							<p class="timeRefMinutes">мин</p>
+							</li>
+							<li> <span class="seconds">00</span>
+							<p class="timeRefSeconds">сек</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="sale-block">
+				<div class="sale-img">
+					<img src="images/sale.jpg" alt="">
+				</div>
+				<div class="sale-desc">
+					<div class="title">
+						распродажа <br>
+						50% <br>
+						осталось
+					</div>
+					<div class="timer-area">
+						<ul id="countdown-3" class="countdown">
+							<li> <span class="hours">00</span>
+							<p class="timeRefHours">час</p>
+							</li>
+							<li> <span class="minutes">00</span>
+							<p class="timeRefMinutes">мин</p>
+							</li>
+							<li> <span class="seconds">00</span>
+							<p class="timeRefSeconds">сек</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="catalog clearfix">
+			<div class="title-name">
+				<img src="images/icons/red-logo.png" alt="" class="red-logo">
+				<span class="name-title">распродажа</span>
+			</div>
 			<div class="cat-block">
 				<div class="cat-img">
 					<img src="images/catalog.jpg" alt="">
+					<div class="sale-poster">
+						<img src="images/sale-block.png" alt="">
+					</div>
 				</div>
 				<div class="cat-desc">
 					<div class="title">
@@ -366,8 +444,14 @@
 
 
 
+
 <script src="js/jquery.js"></script>
 <script src="js/script.js"></script>
+<script>
+	$(document).ready(function () {
+		$('.sale-variant').equivalent();
+	});
+</script>
 <script src="js/filter.js"></script>
 <script src="js/ion.rangeSlider.js"></script>
 <script>
@@ -380,6 +464,19 @@
     to: 7000,
     postfix: "р"
 });
+</script>
+<script src="js/countdown.js"></script>
+<script>
+	$(document).ready(function(){
+			$("#countdown").countdown({
+				date: "1 july 2015 18:00:00",
+				format: "on"
+			},
+			
+			function() {
+				
+			});
+		});
 </script>
 </body>
 </html>
