@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/ion.rangeSlider.css">
 	<link rel="stylesheet" href="css/ion.rangeSlider.skinHTML5.css">
-	<link rel="stylesheet" href="css/countdown.css">
+	<link rel="stylesheet" href="css/jquery.countdown.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/main.less">
 	<script src="js/less.min.js"></script>
@@ -91,10 +91,7 @@
 			<h3>куртки</h3>
 			<div class="filter clearfix">
 				<div class="select">
-					<a href="javascript:void(0);" class="slct">
-						Размер
-						<span class="arrow-bot"><img src="images/icons/arrow-bot.png" alt=""></span>
-					</a>
+					<a href="javascript:void(0);" class="slct">Размер</a>
 					<ul class="drop">
 						<li>Select 1</li>
 						<li>Select 2</li>
@@ -104,10 +101,7 @@
 					<input type="hidden" id="select">
 				</div>
 				<div class="select">
-					<a href="javascript:void(0);" class="slct">
-						Состав
-						<span class="arrow-bot"><img src="images/icons/arrow-bot.png" alt=""></span>
-					</a>
+					<a href="javascript:void(0);" class="slct">Состав</a>
 					<ul class="drop">
 						<li>Select 1</li>
 						<li>Select 2</li>
@@ -117,10 +111,7 @@
 					<input type="hidden" id="select">
 				</div>
 				<div class="select">
-					<a href="javascript:void(0);" class="slct">
-						Скидка
-						<span class="arrow-bot"><img src="images/icons/arrow-bot.png" alt=""></span>
-					</a>
+					<a href="javascript:void(0);" class="slct">Скидка</a>
 					<ul class="drop">
 						<li>Select 1</li>
 						<li>Select 2</li>
@@ -148,17 +139,7 @@
 						осталось
 					</div>
 					<div class="timer-area">
-						<ul id="countdown" class="countdown">
-							<li> <span class="hours">00</span>
-							<p class="timeRefHours">час</p>
-							</li>
-							<li> <span class="minutes">00</span>
-							<p class="timeRefMinutes">мин</p>
-							</li>
-							<li> <span class="seconds">00</span>
-							<p class="timeRefSeconds">сек</p>
-							</li>
-						</ul>
+						<div id="countdown"></div>
 					</div>
 				</div>
 			</div>
@@ -173,17 +154,7 @@
 						осталось
 					</div>
 					<div class="timer-area">
-						<ul id="countdown-2" class="countdown">
-							<li> <span class="hours">00</span>
-							<p class="timeRefHours">час</p>
-							</li>
-							<li> <span class="minutes">00</span>
-							<p class="timeRefMinutes">мин</p>
-							</li>
-							<li> <span class="seconds">00</span>
-							<p class="timeRefSeconds">сек</p>
-							</li>
-						</ul>
+						<div id="countdown-2"></div>
 					</div>
 				</div>
 			</div>
@@ -198,17 +169,7 @@
 						осталось
 					</div>
 					<div class="timer-area">
-						<ul id="countdown-3" class="countdown">
-							<li> <span class="hours">00</span>
-							<p class="timeRefHours">час</p>
-							</li>
-							<li> <span class="minutes">00</span>
-							<p class="timeRefMinutes">мин</p>
-							</li>
-							<li> <span class="seconds">00</span>
-							<p class="timeRefSeconds">сек</p>
-							</li>
-						</ul>
+						<div id="countdown-3"></div>
 					</div>
 				</div>
 			</div>
@@ -223,7 +184,7 @@
 				<div class="cat-img">
 					<img src="images/catalog.jpg" alt="">
 					<div class="sale-poster">
-						<img src="images/sale-block.png" alt="">
+						скидка -15%
 					</div>
 				</div>
 				<div class="cat-desc">
@@ -446,6 +407,25 @@
 
 
 <script src="js/jquery.js"></script>
+<script src="js/jquery.plugin.js"></script>
+<script src="js/jquery.countdown.js"></script>
+<script>
+	$(function () {
+	var austDay = new Date();
+	austDay = new Date(2015, 7-1, 2);
+	$('#countdown').countdown({until: austDay,padZeroes: true,format: 'HMS'});
+});
+	$(function () {
+		var nextDay = new Date();
+		nextDay = new Date(2015, 7-1, 3);
+		$('#countdown-2').countdown({until: nextDay,padZeroes: true,format: 'HMS'});
+	});
+	$(function () {
+		var threeDay = new Date();
+		threeDay = new Date(2015, 7-1, 4);
+		$('#countdown-3').countdown({until: threeDay,padZeroes: true,format: 'HMS'});
+	});
+</script>
 <script src="js/script.js"></script>
 <script>
 	$(document).ready(function () {
@@ -464,19 +444,6 @@
     to: 7000,
     postfix: "р"
 });
-</script>
-<script src="js/countdown.js"></script>
-<script>
-	$(document).ready(function(){
-			$("#countdown").countdown({
-				date: "1 july 2015 18:00:00",
-				format: "on"
-			},
-			
-			function() {
-				
-			});
-		});
 </script>
 </body>
 </html>
